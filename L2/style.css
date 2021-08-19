@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.full {
+    width:400px;
+    margin: 0 auto;
+}
+
+.top-bar {
+    height: 120px;
+    background-color: #2dcc70;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    width:155px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 35px;
+}
+
+.list{
+    position: relative;
+    height: 90px;
+    top: -20px;
+    z-index: 2;
+    
+}
+
+
+select {
+    width: 330px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 10px; 
+    padding-left: 10px;
+    display: flex;
+    border-radius:10px; 
+    /* 기본 화살표 없애기 */
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -o-appearance:none;
+    appearance:none;
+    /* background : url(이미지 경로) 좌우위치 상하위치 반복여부  */
+    background: #ffffff url(./images/point.jpg) no-repeat 98% 50%; 
+    background-size: 40px;
+    font-size: 15px; 
+    color: #8C8C8C;
+    cursor: pointer;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    border-color: #f0f0f0;
+    border-width: 1px;
+}
+select::-ms-expand{
+    display:none;
+}  
+
+button {
+    display:block;
+    margin: 0 auto;
+    width: 120px;
+    height: 35px;
+    font-size: 15px;
+    letter-spacing: 2.5px;
+    color: #8C8C8C;
+    background-color: white;
+    border: none; 
+    border-radius: 45px; 
+    cursor: pointer;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #2dcc70;
+    color: white;
+}
+
+.route-map {
+    display:block;
+    width:400px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;  
+}

@@ -1,0 +1,332 @@
+a:link{color:#740074;} /*링크에 관한 설정*/
+a:visited{color:#740074;}
+a:hover{color:#740074;}
+a:active{color:#740074;}
+a{
+    text-decoration: none;
+}
+body{
+    padding:0px;
+    margin:0px;
+    background-color:#CCC;
+    font-family:sans-serif;
+}
+.container{  /*width=400, height=700인 컨테이너 설정 (화면 크기)*/
+    margin:0 auto;
+    width:400px;
+    /* height:700px; */
+    background-color:#FFF;
+}
+.bar{ /*상단 액션 바의 영역 지정*/
+    padding:0px;
+    margin: 0 auto;
+    width:400px;
+    height:70px;
+    background-color:rgba(80, 80, 80, 0.041);
+    border-bottom:1px solid lightgray;
+}
+.departure{ /*상단 액션 바의 출발역 정보에 관한 속성*/
+    color:#312f2f;
+    width:90px;
+    padding-top: 20px;
+    padding-left:40px;
+    font-size:16pt;
+    font-weight:bold;
+    float:left;
+    text-align:center;
+}
+.goto{       /*상단 액션 바 화살표 영역 지정*/
+    margin:0px;
+    padding:0 5px;
+    padding-top:20px;
+    padding-left:-40px;
+    width:30px;
+    height:30px;
+    float:left;
+}
+.arrival{      /*상단 액션 바의 도착역 정보에 관한 속성 지정*/
+    color:#312f2f; 
+    width:90px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size:16pt;
+    font-weight:bold;
+    float:left;
+
+}
+
+.newicon{ /*상단 액션 바의 새로고침 아이콘에 관한 속성 지정*/
+    margin:0px;
+    padding-top:15px;
+    padding-left:35px;
+    width:40px;
+    height:40px;
+    float:left;
+}
+.xicon{ /*상단 액션 바의 닫기 아이콘에 관한 속성 지정*/
+    margin:0px;
+    padding: 21px 10px 0 80px;
+    width:25px;
+    height:25px;
+    float:left;
+    /*position*/
+    position:relative;
+}
+
+.time{ /*운행정보를 나타낼 영역에 관한 속성 지정*/
+    padding:0px;
+    margin: 0 auto;
+    width:400px;
+    height:100px;
+    background-color:#FFF;
+}
+.previous{        /*전역에 관한 초록색 영역 속성 지정*/
+    width:100px;
+    height:30px;
+    background-color: #2dcc70;
+    border-radius: 30px 0 0 30px;
+    float:left;
+    position:relative;
+    z-index:1;
+    top:40px;
+    left:34px;
+}
+.station{        /*출발역에 관한 초록색 영역 속성 지정*/
+    width: 122px;
+    height: 60px;
+    background-color:#FFF;
+    border-radius: 30px 30px;
+    border: 6px solid#2dcc70;
+    float:left;
+    position:relative;
+    z-index:2;
+    top: 20px;
+    left: 32px;
+    display: flex;
+    justify-content: center; /*글씨 수직정렬*/
+    align-items: center; /*글씨 수평정렬*/
+}
+.station div {
+    font-size: 20px;
+    font-weight:bold;
+}
+.next{        /*다음역에 관한 초록색 영역 속성 지정*/
+    width:100px;
+    height:30px;
+    background-color: #2dcc70;
+    border-radius: 0 30px 30px 0;
+    position:relative;
+    float:left;
+    z-index:0;
+    top:40px;
+    left:30px;
+}
+.prestation{ /*출발역에 관한 초록색 영역 글자 속성 지정*/
+    font-size: 11pt;
+    font-weight:bold;
+    color:#fff;
+    text-align:center;
+    margin:5px 0 0 15px;
+}
+.nextstation{ /*다음역에 관한 초록색 영역 글자 속성 지정*/
+    font-size: 11pt;
+    font-weight:bold;
+    color:#fff;
+    text-align:center;
+    margin:5px 15px 0 0;
+}
+.leftarrow{
+    width:15px;
+    height:15px;
+    position:absolute;
+    left:3px;
+    top:7px;
+}
+.rightarrow{
+    width:15px;
+    height:15px;
+    position:absolute;
+    right:3px;
+    top:7px;
+}
+
+.subway_direction{ /*실시간 열차 시간을 보여줄 영역 지정*/
+    width:140px;
+    height: 35px;
+    margin: 2px 0 15px 0;
+    padding : 0 29px;
+    float: left;
+    /*border-bottom:1px solid lightgray;*/
+    border-right: 1px solid lightgray;
+}
+.subway_direction2{ /*실시간 열차 시간을 보여줄 영역 지정*/
+    width:140px;
+    height: 35px;
+    margin: 2px 0 15px 0;
+    padding : 0 29px;
+    float: left;
+    /*border-bottom:1px solid lightgray;*/
+}
+
+.subway_name{ /*실시간 열차 이름*/
+    /*width:70px;*/
+    width:60px;
+    margin: 0px;
+    font-size: 9pt;
+    color:#312f2f;
+    float: left;
+}
+
+.subway_time{ /*실시간 열차 도착시간*/
+    /*width:50px;*/
+    width:80px;
+    margin: 0px;
+    font-size: 9pt;
+    color:#e43d3d;
+    float:right;
+}
+
+.spacing{ /*실시간 열차 이름과 도착시간 사이 여백 지정*/
+    width:20px;
+    height: 20pt;
+    float:left;
+}
+
+.duration{         /*소요시간 글자 영역 속성 지정*/
+    width:400px;
+    border-top: 1px solid lightgray;
+    height: 20px;
+    margin:10px 0 0 0;
+    padding-top: 10px;
+    padding-left: 34px;
+    font-size:13pt;
+    color:#312f2f;
+    clear: left;
+}
+
+.durationtime{        /*소요시간 정보 나타낼 영역 속성 지정*/
+    width:400px;
+    height: 50px;
+    margin:10px 34px;
+    font-size:15pt;
+    font-weight:bold;
+    color:#312f2f;
+}
+
+.selbutton{        /*출발시간 고르는 버튼 속성 지정*/
+    width:30px;
+    height:32px;
+    margin: 10px 15px 10px 302px;
+}
+.circle{        /*2가 적힌 원에 관한 속성 지정*/
+    width : 45px;
+    height : 45px;
+    border-radius: 50%;
+    background-color:#2dcc70;
+    font-size:13pt;
+    text-align:center;
+    line-height: 43px;
+    color:#fff;
+    position:relative;
+    z-index:1;
+    top:30px;
+    left:80px;
+
+    
+}
+.line{        /*2와 하차 사이의 초록색 라인에 대한 속성 지정*/
+    width: 10px;
+    height:auto;
+    background-color: #2dcc70 ;
+    position:relative;
+    z-index:0;
+    top:0px;
+    left:98px;
+}
+
+.circle2{        /*'하차'가 적힌 원에 관한 속성 지정*/
+    width : 45px;
+    height : 45px;
+    border-radius: 50%;
+    background-color:#2dcc70;
+    font-size:13pt;
+    text-align:center;
+    line-height: 43px;
+    color:#fff;
+    position:relative;
+    z-index:2;
+    top:-10px;
+    left:80px;
+    
+}
+
+select {
+    width: 332px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 10px; 
+    padding-left: 10px;
+    display: flex;
+    border-radius:8px; 
+    /* 기본 화살표 없애기 */
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -o-appearance:none;
+    appearance:none;
+    /* background : url(이미지 경로) 좌우위치 상하위치 반복여부  */
+    background: #ffffff url(./images/tri.png) no-repeat 98% 50%; 
+    background-size: 20px;
+    font-size: 15px; 
+    color: #8C8C8C;
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    border-color: #dadada;
+    border-width: 1px;
+}
+select::-ms-expand{
+    display:none;
+}
+
+.circle_right {
+   width:260px;
+    margin: 0px;
+    font-size: 13pt;
+    font-weight:bold;
+    float:right;
+}
+
+
+.Line2{
+   width: 75px;
+   hight: auto;
+   margin: 0;
+   padding: 20px;
+   position:relative;
+   left:10px;
+}
+.lineNM{
+   width: 45px;
+   margin:5px 25px 7px 18px;
+}
+
+.AlineNM{
+   width:auto;
+   hight: auto;
+   margin: 0;
+   position: relative;
+    font-size:13pt;
+    text-align:left;
+    font-weight:bold;
+    left:140px;
+}
+.AlineNM2{
+   width:150px;
+   hight: auto;
+   margin: 0;
+   position: relative;
+    font-size:13pt;
+    text-align:left;
+    font-weight:bold;
+    left:140px;
+    top:-40px;
+}
